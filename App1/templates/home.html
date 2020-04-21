@@ -1,0 +1,19 @@
+<h1> hello world </h1>
+게시판
+{%for blogs in blogs1.all%}
+<h1>{{blogs.title}}</h1>
+<h3>{{blogs.pub_date}}</h3>
+<p>{{blogs.body}}</p>
+<a href="{% url 'edit' blogs.id%}">수정하기</a>
+<form action="{% url 'deleteData'%}">
+<input type="hidden" name="id" value={{blogs.id}}>
+<input type="submit" value="삭제하기">
+</form>
+{%endfor%}
+<br>
+<a href="/create">글쓰기</a>
+
+<!--
+{% for blog in blogs1.all%}
+<h1>{{blog.title}}</h1>
+{%endfor%}-->

@@ -1,0 +1,8 @@
+<form action="{% url 'editData' %}">
+    <input type="text" name="title" value={{details.title}}>
+    <textarea type="text" name="body">{{details.body}}</textarea>
+    <input type="hidden" name="id" value={{details.id}}>
+    <input type="submit" placeholder="제출하기">
+</form>
+
+<a href="/">뒤로가기</a>
