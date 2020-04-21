@@ -1,3 +1,3 @@
 Django Practice
 
-- CRUD 복습
+- CRUD 제작
